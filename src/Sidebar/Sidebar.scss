@@ -45,8 +45,8 @@
         }
         .horizontal__line {
             margin-left: -32px;
-            margin-right: -32px;
-            color: $sidebar-horizontal;
+            margin-right: -30px;
+            border: 1px solid $sidebar-horizontal;
         }
     }
 }

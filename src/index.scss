@@ -12,9 +12,11 @@
 }
 
 $sidebar-primary-color: #A4A6B3;
-$sidebar-horizontal:#DFE0EB;
+$sidebar-horizontal:#5c5c5c;
 $sidebar-background:#363740;
 $sidebar-fonts: 'Exo 2',
+sans-serif;
+$overview-fonts:"Mulish",
 sans-serif;
 $sidebar-fontsize-large:19px;
 $sidebar-fontsize-med:16px;
@@ -28,5 +30,10 @@ $overview-fontsize-large:24px;
 $overview-fontsize-xxxlarge:40px;
 $overview-fontsize-xss:12px;
 $overview-border-primary:#9FA2B4;
-$overview-hover-primary:blue;
+$overview-hover-primary:#3751FF;
+$fotter-accent-color: #3751FF;
 $card-background:#fff;
+$btn-background:#F0F1F7;
+$label-urgent:#FEC400;
+$label-new:#29CC97;
+$placeholder-primary:#C5C7CD;

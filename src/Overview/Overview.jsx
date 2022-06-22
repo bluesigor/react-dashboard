@@ -86,6 +86,88 @@ function Overview() {
           </div>
         </div>
       </section>
+      <footer>
+        <div className="tickets">
+          <header>
+            <div className="title">
+              <h2>Unresolved tickets</h2>
+              <p>
+                <span>Group:</span>support
+              </p>
+            </div>
+            <a href="#">View details</a>
+          </header>
+          <ul>
+            <li className="ticket__item">
+              <span>Waiting on Feature Request</span>
+              <span>4238</span>
+            </li>
+            <li className="ticket__item">
+              <span>Awaiting Customer Response</span>
+              <span>1005</span>
+            </li>
+            <li className="ticket__item">
+              <span>Awaiting Developer Fix</span>
+              <span>914</span>
+            </li>
+            <li className="ticket__item">
+              <span>Pending</span>
+              <span>281</span>
+            </li>
+          </ul>
+        </div>
+        <div className="tasks">
+          <header>
+            <div className="title">
+              <h2>Tasks</h2>
+              <p>Today:</p>
+            </div>
+            <p>
+              <a href="#">View All</a>
+            </p>
+          </header>
+          <ul>
+            <li className="input">
+              <input
+                placeholder="Create new Task"
+                type="text"
+                name=""
+                id="task__input"
+              />
+              <button type="Submit" htmlFor="task__input">
+                +
+              </button>
+            </li>
+            <li className="task__item">
+              <div>
+                <input type="radio" name="" id="task__urgent" />
+                <h2>Finish ticket update</h2>
+              </div>
+              <label className="urgent" htmlFor="task__urgent">
+                Urgent
+              </label>
+            </li>
+            <li className="task__item">
+              <div>
+                <input type="radio" name="checked" id="task__new" />
+                <h2>Create new ticket example</h2>
+              </div>
+              <label className="new" htmlFor="task__new">
+                New
+              </label>
+            </li>
+            <li className="task__item">
+              <div>
+                <input type="radio" name="" id="task__default" />
+                <h2>Update ticket report</h2>
+              </div>
+              <label className="default" htmlFor="task__default">
+                default
+              </label>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </main>
   )
 }
