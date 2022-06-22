@@ -1,0 +1,161 @@
+@import '../index.scss';
+.overview {
+    padding: 30px 33px;
+    width: 100%;
+    color: $overview-primary-color;
+    font-family: $sidebar-fonts;
+    ;
+    header {
+        height: 44px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .title {
+            font-size: $overview-fontsize-large;
+            font-weight: $sidebar-fontweight-large;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 300px;
+            h2 {
+                font-weight: $overview-fontweight-med;
+                font-size: $overview-fontsize-med;
+            }
+        }
+    }
+    .cards {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        .card {
+            background-color: $card-background;
+            height: 134px;
+            width: 258px;
+            border: 1px solid $overview-border-primary;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .title {
+                margin-bottom: 12px;
+                color: $overview-border-primary;
+                font-size: $sidebar-fontsize-large;
+                font-weight: $sidebar-fontweight-large;
+            }
+            .title:hover {
+                color: $overview-hover-primary;
+                transition: 0.4s;
+            }
+            p {
+                color: $overview-primary-color;
+                font-size: $overview-fontsize-xxxlarge;
+                font-weight: $sidebar-fontweight-large;
+            }
+            p:hover {
+                color: $overview-hover-primary;
+                transition: 0.4s;
+            }
+        }
+    }
+    .card:hover {
+        border-color: $overview-hover-primary;
+        cursor: pointer;
+    }
+    .chart {
+        border: 1px solid $overview-border-primary;
+        border-radius: 8px;
+        margin-top: 30px;
+        background-color: $card-background;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        .graph {
+            width: 100%;
+            height: 100%;
+            padding: 30px 27px;
+            flex: 0.8;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid $overview-border-primary;
+            .title {
+                font-weight: $sidebar-fontweight-large;
+                font-size: $sidebar-fontsize-large;
+            }
+            .description {
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                p {
+                    font-weight: $sidebar-fontweight-small;
+                    font-size: $overview-fontsize-xss;
+                    color: $overview-border-primary;
+                }
+                .day {
+                    margin-top: 8px;
+                    display: flex;
+                    width: 175px;
+                    justify-content: space-between;
+                    align-items: center;
+                    span {
+                        color: $overview-border-primary;
+                        font-size: $overview-fontsize-xss;
+                        font-weight: $overview-fontweight-med;
+                    }
+                    .horizontal__today {
+                        width: 16px;
+                        border-bottom: 2px solid $overview-hover-primary;
+                        border-left: none;
+                        border-right: none;
+                        border-top: none;
+                    }
+                    .horizontal__yesterday {
+                        width: 16px;
+                        border-bottom: 2px solid $overview-border-primary;
+                        border-left: none;
+                        border-right: none;
+                        border-top: none;
+                    }
+                }
+            }
+            .graphic {
+                margin-top: 54px;
+            }
+        }
+        .stats {
+            width: 100%;
+            flex: 0.35;
+            display: flex;
+            flex-direction: column;
+            .stat {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                border-bottom: 1px solid $overview-border-primary;
+                flex: 1;
+                h1 {
+                    font-weight: $overview-fontweight-med;
+                    font-size: $sidebar-fontsize-med;
+                    color: $overview-border-primary;
+                }
+                p {
+                    margin-top: 6px;
+                    font-weight: $sidebar-fontweight-large;
+                    font-size: $overview-fontsize-large;
+                    color: $overview-primary-color;
+                }
+            }
+            .stat:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}
