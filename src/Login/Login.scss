@@ -1,0 +1,155 @@
+@import '../index.scss';
+::placeholder {
+    color: $login-placeholder;
+    font-weight: $sidebar-fontweight-small;
+    font-size: $overview-fontsize-med;
+    opacity: 40%;
+}
+
+.outer {
+    font-family: $sidebar-fonts;
+    color: white;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $login-outer;
+    .inner {
+        background-color: $card-background;
+        width: 380px;
+        height: 582px;
+        border: 1px solid $overview-border-primary;
+        border-radius: 8px;
+        padding: 40px 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .logo a {
+            flex-direction: column;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            h4 {
+                margin-top: 12px;
+                font-weight: $sidebar-fontweight-large;
+                font-size: $sidebar-fontsize-large;
+                color: $sidebar-primary-color;
+            }
+        }
+    }
+    .title {
+        margin-top: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h3 {
+            width: 100%;
+            font-size: $overview-fontsize-large;
+            font-weight: $sidebar-fontweight-large;
+            color: $overview-primary-color;
+        }
+        p {
+            font-size: $overview-fontsize-med;
+            font-weight: $sidebar-fontweight-small;
+            color: $overview-border-primary;
+            margin-top: 12px;
+            width: 100%;
+        }
+    }
+    .input {
+        margin-top: 48px;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        .email {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            input {
+                padding: 11px 16px;
+                height: 42px;
+                margin-top: 6px;
+                width: 100%;
+                color: $login-placeholder;
+            }
+            label {
+                font-weight: $sidebar-fontweight-large;
+                font-size: $overview-fontsize-xss;
+                color: $overview-border-primary;
+                text-transform: uppercase;
+            }
+        }
+        .password {
+            margin-top: 24px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            .label-block {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: $overview-border-primary;
+            }
+            .label-block:first-child {
+                font-size: $overview-fontsize-xss;
+                font-weight: $sidebar-fontweight-large;
+            }
+            .label-block:nth-child(2) {
+                font-size: $login-fontsize-xsss;
+                font-weight: $sidebar-fontweight-small;
+            }
+            input {
+                position: relative;
+                padding: 11px 16px;
+                height: 42px;
+                margin-top: 6px;
+                width: 100%;
+            }
+            .password-show__logo {
+                position: absolute;
+                width: 305px;
+                padding: 32px 0px;
+                display: flex;
+                justify-content: flex-end;
+                button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: none;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+    .login-btn {
+        margin-top: 24px;
+        width: 100%;
+        height: 48px;
+        border: 1px solid $overview-hover-primary;
+        border-radius: 8px;
+        color: $card-background;
+        font-weight: $overview-fontweight-med;
+        font-size: $overview-fontsize-med;
+        background-color: $overview-hover-primary;
+    }
+    .signup {
+        margin-top: 32px;
+        color: $overview-border-primary;
+        font-size: $overview-fontsize-med;
+        font-weight: $sidebar-fontweight-small;
+        a {
+            text-decoration: none;
+            margin-left: 5px;
+            font-weight: $overview-fontweight-med;
+            color: $overview-hover-primary;
+        }
+    }
+}
