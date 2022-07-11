@@ -1,11 +1,11 @@
-@import '../index.scss';
+@import '../../styles/index.scss';
 .sidebar {
     width: 255px !important;
     padding: 37px 30px;
     font-family: $sidebar-fonts;
     color: $sidebar-primary-color;
     background-color: $sidebar-background;
-    .title {
+    &-title {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -17,7 +17,7 @@
             font-size: $sidebar-fontsize-large;
         }
     }
-    .list {
+    &-list {
         margin-top: 60px;
         height: 45vh;
         display: flex;

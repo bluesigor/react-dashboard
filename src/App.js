@@ -1,13 +1,14 @@
-import Sidebar from './Sidebar/Sidebar'
-import Overview from './Overview/Overview'
-import './index.scss'
-import Login from './Login/Login'
+import Sidebar from './components/Sidebar/Sidebar'
+import Overview from './pages/Overview/Overview'
+import './styles/index.scss'
+// import Login from './pages/Login/Login'
+
 function App() {
   return (
     <div className="App">
-      {/* <Sidebar />
-      <Overview /> */}
-      <Login />
+      <Sidebar />
+      <Overview />
+      {/* <Login /> */}
     </div>
   )
 }

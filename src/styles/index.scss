@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;0,500;1,400&family=Inconsolata&family=Kdam+Thmor+Pro&family=Mulish:wght@200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    background-color: #F7F8FC;
+    display: flex;
+    flex-direction: row;
+}
+
+@import './colors.scss';
+@import './fonts.scss'
