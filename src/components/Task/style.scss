@@ -1,0 +1,67 @@
+@import '../../styles/index.scss';
+.task__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: right;
+    justify-content: space-between;
+    padding: 28px 32px;
+    border-bottom: 1px solid $overview-border-primary;
+    flex: 1;
+    div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex: 3;
+        input {
+            margin-right: 20px;
+        }
+    }
+    h2 {
+        font-size: $overview-fontsize-med;
+        font-weight: $overview-fontweight-med;
+    }
+    .urgent {
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: $overview-fontsize-xss;
+        color: $card-background;
+        border: 1px solid $label-urgent;
+        border-radius: 8px;
+        width: 74px;
+        background-color: $label-urgent;
+        text-transform: uppercase;
+    }
+    .new {
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: $overview-fontsize-xss;
+        color: $card-background;
+        border: 1px solid $label-new;
+        border-radius: 8px;
+        width: 54px;
+        background-color: $label-new;
+        text-transform: uppercase;
+    }
+    .default {
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: $overview-fontsize-xss;
+        color: $overview-border-primary;
+        border: 1px solid $btn-background;
+        border-radius: 8px;
+        width: 76px;
+        background-color: $btn-background;
+        text-transform: uppercase;
+    }
+}
+
+.task__item:last-child {
+    border-bottom: none;
+}

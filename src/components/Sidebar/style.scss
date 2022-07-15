@@ -1,7 +1,10 @@
 @import '../../styles/index.scss';
 .sidebar {
+    height: 100%;
+    position: fixed;
     width: 255px !important;
     padding: 37px 30px;
+    overflow-y: scroll;
     font-family: $sidebar-fonts;
     color: $sidebar-primary-color;
     background-color: $sidebar-background;

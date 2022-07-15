@@ -8,6 +8,7 @@ import notific from './images/new.svg'
 import vertical from './images/vertical.svg'
 import account from './images/photo.svg'
 import graphic from './images/graph.svg'
+import Tasks from '../../components/Tasks/Tasks'
 
 function Overview() {
   return (
@@ -27,9 +28,9 @@ function Overview() {
           <h2> Jones Ferdinand </h2>{' '}
           <a href="#">
             <img src={account} alt="vertical" />
-          </a>{' '}
-        </div>{' '}
-      </header>{' '}
+          </a>
+        </div>
+      </header>
       <section className="cards">
         <div className="card">
           <h1 className="title"> Unresolved </h1> <p> 60 </p>{' '}
@@ -103,56 +104,7 @@ function Overview() {
             </li>{' '}
           </ul>{' '}
         </div>{' '}
-        <div className="tasks">
-          <header>
-            <div className="title">
-              <h2> Tasks </h2> <p> Today: </p>{' '}
-            </div>{' '}
-            <p>
-              <a href="#"> View All </a>{' '}
-            </p>{' '}
-          </header>{' '}
-          <ul>
-            <li className="input">
-              <input
-                placeholder="Create new Task"
-                type="text"
-                name=""
-                id="task__input"
-              />
-              <button type="Submit" htmlFor="task__input">
-                +
-              </button>{' '}
-            </li>{' '}
-            <li className="task__item">
-              <div>
-                <input type="radio" name="" id="task__urgent" />
-                <h2> Finish ticket update </h2>{' '}
-              </div>{' '}
-              <label className="urgent" htmlFor="task__urgent">
-                Urgent{' '}
-              </label>{' '}
-            </li>{' '}
-            <li className="task__item">
-              <div>
-                <input type="radio" name="checked" id="task__new" />
-                <h2> Create new ticket example </h2>{' '}
-              </div>{' '}
-              <label className="new" htmlFor="task__new">
-                New{' '}
-              </label>{' '}
-            </li>{' '}
-            <li className="task__item">
-              <div>
-                <input type="radio" name="" id="task__default" />
-                <h2> Update ticket report </h2>{' '}
-              </div>{' '}
-              <label className="default" htmlFor="task__default">
-                default{' '}
-              </label>{' '}
-            </li>{' '}
-          </ul>{' '}
-        </div>{' '}
+        <Tasks />
       </footer>{' '}
     </main>
   )

@@ -1,0 +1,86 @@
+@import '../../styles/index.scss';
+.tickets-page {
+    position: initial;
+    margin-left: 255px;
+    padding: 30px 33px;
+    width: 100%;
+    color: $overview-primary-color;
+    font-family: $sidebar-fonts;
+    &-header {
+        height: 44px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        & .title {
+            font-size: $overview-fontsize-large;
+            font-weight: $sidebar-fontweight-large;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 300px;
+            h2 {
+                font-weight: $overview-fontweight-med;
+                font-size: $overview-fontsize-med;
+            }
+        }
+    }
+    .list {
+        border: 1px solid $sidebar-hover-primary;
+        border-radius: 8px;
+        background-color: $card-background;
+        margin: 45px 45px;
+        padding: 32px;
+        &-header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            &-title {
+                font-size: $sidebar-fontsize-large;
+                font-weight: $sidebar-fontweight-large;
+            }
+            &-functionality {
+                width: 120px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                button {
+                    background-color: $card-background;
+                    border: none;
+                }
+                .list__item {
+                    font-weight: $overview-fontweight-med;
+                    font-size: $overview-fontsize-med;
+                    list-style: none;
+                }
+            }
+        }
+        &-subnav {
+            height: 30px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            color: $overview-border-primary;
+            margin-top: 48px;
+            &-title {
+                font-size: $overview-fontsize-med;
+                flex: 1;
+            }
+            &-description {
+                justify-content: space-evenly;
+                display: flex;
+                flex: 2;
+            }
+        }
+        &-sub {
+            color: brown;
+            &-line {
+                margin: 0px -32px;
+            }
+        }
+    }
+}

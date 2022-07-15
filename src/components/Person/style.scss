@@ -1,0 +1,48 @@
+@import '../../styles/index.scss';
+.person {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    &-line {
+        margin: 0px -32px;
+    }
+    h3 {
+        font-size: $overview-fontsize-med;
+        font-weight: $overview-fontweight-med;
+    }
+    p {
+        font-size: $overview-fontsize-xss;
+        font-weight: $sidebar-fontweight-small;
+        color: $overview-border-primary;
+    }
+    &-main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex: 0.7;
+        &-message {
+            margin-left: 24px;
+        }
+    }
+    &-details {
+        display: flex;
+        flex: 1.1;
+        align-items: center;
+        justify-content: space-around;
+        padding-left: 50px;
+        &-name {
+            text-align: start;
+        }
+        &-caution {
+            border: 1px solid red;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 90px;
+            background-color: red;
+            margin-right: 25px;
+            height: 30px;
+        }
+    }
+}

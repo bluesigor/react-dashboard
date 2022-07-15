@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import './style.scss'
+import { Link } from 'react-router-dom'
 import logo from './images/logo.svg'
 import agents from './images/agents.svg'
 import articles from './images/articles.svg'
@@ -21,11 +22,11 @@ function Sidebar() {
       <ul className="sidebar-list">
         <li className="list__item">
           <img src={overview} alt="overview" />
-          <a href="#"> Overview </a>{' '}
+          <Link to="/*"> Overview </Link>{' '}
         </li>{' '}
         <li className="list__item">
           <img src={tickets} alt="tickets" />
-          <a href="#"> Tickets </a>{' '}
+          <Link to="/tickets"> Tickets </Link>{' '}
         </li>{' '}
         <li className="list__item">
           <img src={ideas} alt="ideas" />
