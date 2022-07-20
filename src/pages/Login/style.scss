@@ -60,10 +60,6 @@
             width: 100%;
         }
     }
-    &-wrong {
-        font-size: $overview-fontsize-xss;
-        color: red;
-    }
     &-input {
         padding-top: 48px;
         width: 100%;
@@ -88,6 +84,10 @@
                 color: $overview-border-primary;
                 text-transform: uppercase;
             }
+            &-wrong {
+                font-size: $overview-fontsize-xss;
+                color: red;
+            }
         }
         &-password {
             margin-top: 24px;
@@ -96,20 +96,24 @@
             flex-direction: column;
             align-items: flex-start;
             position: relative;
-            .label-block {
+            &-label-block {
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 color: $overview-border-primary;
             }
-            .label-block:first-child {
+            &-label-block:first-child {
                 font-size: $overview-fontsize-xss;
                 font-weight: $sidebar-fontweight-large;
             }
-            .label-block:nth-child(2) {
+            &-label-block:nth-child(2) {
                 font-size: $login-fontsize-xsss;
                 font-weight: $sidebar-fontweight-small;
+            }
+            &-wrong {
+                font-size: $overview-fontsize-xss;
+                color: red;
             }
             input {
                 position: relative;
